@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import { hash } from 'bcryptjs'
-import { PrismaClient } from '../src/generated/prisma/client'
+import { PrismaClient } from "@prisma/client";
 import { PrismaMariaDb } from '@prisma/adapter-mariadb'
 
 const adapter = new PrismaMariaDb({
