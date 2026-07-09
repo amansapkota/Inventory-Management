@@ -1,7 +1,7 @@
 import { compare, hash } from 'bcryptjs'
 import { cookies } from 'next/headers'
 import { prisma } from './prisma'
-import { UserRole } from '@/generated/prisma/client'
+import { UserRole } from '@prisma/client'
 
 const SESSION_COOKIE = 'session_token'
 const SESSION_EXPIRY = 7 * 24 * 60 * 60 * 1000
