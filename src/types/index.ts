@@ -1,4 +1,4 @@
-import type { User, Branch, Company, Product, Customer, Supplier, Sale, Purchase } from '@/generated/prisma/client'
+import type { User, Branch, Company, Product, Customer, Supplier, Sale, Purchase } from '@prisma/client'
 
 export type SafeUser = Omit<User, 'passwordHash'> & {
   company: Pick<Company, 'id' | 'name' | 'logo'>
