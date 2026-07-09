@@ -11,7 +11,7 @@ import { BarcodeDisplay } from '@/components/barcode/barcode-display'
 import { formatCurrency } from '@/lib/utils'
 import { Plus, Pencil, Printer, Tag } from 'lucide-react'
 import toast from 'react-hot-toast'
-import type { Product } from '@/generated/prisma/client'
+import type { Product } from "@prisma/client";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[]>([])
