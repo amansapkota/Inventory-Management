@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select } from '@/components/ui/select'
 import toast from 'react-hot-toast'
-import type { Product } from '@/generated/prisma/client'
+import type { Product } from "@prisma/client";
 
 interface ProductFormProps {
   product?: Product | null
